@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank Battle Arena</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <div id="loading-screen">
+            <h1>Tank Battle Arena</h1>
+            <div class="loading-bar"></div>
+        </div>
+        <div id="menu-screen" class="hidden">
+            <h1>Main Menu</h1>
+            <button id="play-button">Play</button>
+            <button id="customize-button">Customize Tank</button>
+            <button id="store-button">Store</button>
+        </div>
+        <div id="game-ui" class="hidden">
+            <div id="health-bar"></div>
+            <div id="ammo-count"></div>
+            <div id="score"></div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+    <script src="js/tank.js"></script>
+    <script src="js/terrain.js"></script>
+    <script src="js/network.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
