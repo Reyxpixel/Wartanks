@@ -16,5 +16,12 @@
   },
   "engines": {
     "node": ">=14.0.0"
-  }
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
+  "private": true
 } 

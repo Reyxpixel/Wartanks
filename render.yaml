@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: tank-game
+    env: node
+    buildCommand: npm install --production
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /
+    autoDeploy: true
+    disk:
+      name: node_modules
+      mountPath: /opt/render/project/src/node_modules
+      sizeGB: 1 
